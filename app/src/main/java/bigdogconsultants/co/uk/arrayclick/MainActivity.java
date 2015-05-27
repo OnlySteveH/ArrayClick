@@ -1,5 +1,6 @@
 package bigdogconsultants.co.uk.arrayclick;
 
+import android.app.NotificationManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -17,6 +18,7 @@ public class MainActivity extends ActionBarActivity {
     // the label to show the array element
     public TextView mViewLabel;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,13 +35,13 @@ public class MainActivity extends ActionBarActivity {
                  *  element in the array and reset if we have,
                  *  else just carry on to the next
                  */
-                if (mIfCounter < mAlphaArray.length - 1){
+                // mManager = getSystemService(NOTIFICATION_SERVICE);
+                mViewLabel.setText(mAlphaArray[mIfCounter]);
+                if (mIfCounter < mAlphaArray.length - 1) {
                     mIfCounter++;
                 } else {
                     mIfCounter = 0;
                 }
-                // our very own function to update the label text
-                changeIfLabel();
             }
         });
     }
