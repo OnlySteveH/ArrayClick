@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
+                android:id="@+id/relativeLayout">
+
+    <TextView
+        android:text="@string/ifTestLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ifTestLabel"
+        android:layout_alignParentTop="true"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonLabel"
+        android:id="@+id/btnIfTest"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/ifTestLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/forLoopLabel"
+        android:layout_below="@+id/btnIfTest"
+        android:layout_alignLeft="@+id/btnIfTest"
+        android:layout_alignStart="@+id/btnIfTest"
+        android:layout_marginTop="21dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For button"
+        android:id="@+id/btnForLoop"
+        android:layout_below="@+id/forLoopLabel"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
